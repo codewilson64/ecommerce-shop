@@ -11,7 +11,7 @@ const CartItem = () => {
   const productData = useSelector((state) => state.ecommerce.productData);
 
   return (
-    <div className="md:w-2/3 max-w-[500px] mx-auto sm:pr-10 pr-0">
+    <div className="md:w-2/3 max-w-[500px] mx-auto pr-0">
       <div className="w-full">
         <h2 className="font-poppins text-2xl">Your Cart</h2>
       </div>
@@ -26,7 +26,7 @@ const CartItem = () => {
             <div>
               <h2 className="w-52 md:mb-4 mb-2">{item.title}</h2>
 
-              <div className="w-52 flex items-center justify-between text-gray-500 gap-4 border p-3">
+              <div className="w-52 flex items-center justify-between text-gray-500 gap-4 border border-gray-400 p-3">
                 <p className="text-sm">Quantity</p>
                 <div className="flex items-center gap-4 text-sm font-semibold">
                   <button
@@ -42,7 +42,7 @@ const CartItem = () => {
                         })
                       )
                     }
-                    className="border h-5 font-normal text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-black"
+                    className="border border-gray-400 h-5 font-normal text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-black"
                   >
                     -
                   </button>
@@ -60,7 +60,7 @@ const CartItem = () => {
                         })
                       )
                     }
-                    className="border h-5 font-normal text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-black"
+                    className="border border-gray-400 h-5 font-normal text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-black"
                   >
                     +
                   </button>

@@ -43,7 +43,7 @@ const ProductDisplay = () => {
             <p className="text-xs text-gray-500">(1 Customer review)</p>
           </div>
           <p className="text-base text-gray-500 -mt-3">{details.description}</p>
-          <div className="ss:flex block ss:w-[350px] w-[200px] gap-4">
+          <div className="ss:flex block ss:w-[380px] w-[200px] gap-4">
             <div className="ss:w-52 w-full flex items-center justify-between text-gray-500 gap-4 border border-gray-400 p-3 ss:mb-0 mb-3">
               <p className="text-sm">Quantity</p>
               <div className="flex items-center gap-4 text-sm font-semibold">
