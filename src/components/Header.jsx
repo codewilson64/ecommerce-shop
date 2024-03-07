@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="w-full text-white bg-black sm:px-16 px-6 h-20 sticky top-0 z-[10]">
       <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
-        <Link to="/">
+        <Link to="/ecommerce-shop">
           <div>
             <h1 className="font-bold font-poppins ss:text-3xl text-2xl">E-commerce</h1>
           </div>

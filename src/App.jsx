@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/ecommerce-shop",
         element: <Home />,
         loader: productsData,
       },

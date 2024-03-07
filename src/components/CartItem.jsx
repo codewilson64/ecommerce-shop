@@ -74,7 +74,7 @@ const CartItem = () => {
       <button onClick={() => dispatch(resetCart())} className="bg-black text-white mt-8 ml-7 py-1 px-6 hover:bg-gray-700 duration-300">
         Empty Cart
       </button>
-      <Link to="/">
+      <Link to="/ecommerce-shop">
         <button className="flex items-center md:mb-0 mb-4 mt-8 ml-7 gap-1 text-gray-500 hover:text-black duration-300">
           <span>
             <HiOutlineArrowLeft />
