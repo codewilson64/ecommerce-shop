@@ -20,14 +20,14 @@ const CartItem = () => {
           <div key={item._id} className="flex items-center justify-between sm:gap-3 gap-6 mt-6">
             <div className="flex items-center gap-2">
               <MdOutlineClose onClick={() => dispatch(deleteItem(item._id))} className="text-xl cursor-pointer" />
-              <img src={item.image} alt="productImage" className="sm:w-32 w-20 sm:h-32 h-20 object-cover" />
+              <img src={item.image} alt="productImage" className="xs:w-32 w-14 xs:h-32 h-14 object-cover" />
             </div>
 
             <div>
-              <h2 className="w-52 md:mb-4 mb-2">{item.title}</h2>
+              <h2 className="ss:w-52 w-[150px] ss:text-lg text-[12px] md:mb-4 mb-2">{item.title}</h2>
 
-              <div className="w-52 flex items-center justify-between text-gray-500 gap-4 border border-gray-400 p-3">
-                <p className="text-sm">Quantity</p>
+              <div className="ss:w-52 w-[170px] flex items-center justify-between text-gray-500 gap-4 border border-gray-400 sm:p-3 p-2">
+                <p className="ss:text-sm text-[10px]">Quantity</p>
                 <div className="flex items-center gap-4 text-sm font-semibold">
                   <button
                     onClick={() =>
@@ -42,11 +42,11 @@ const CartItem = () => {
                         })
                       )
                     }
-                    className="border border-gray-400 h-5 font-normal text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-black"
+                    className="border border-gray-400 h-5 font-normal ss:text-lg text-sm flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-black"
                   >
                     -
                   </button>
-                  <span>{item.quantity}</span>
+                  <span className="ss:text-lg text-[10px]">{item.quantity}</span>
                   <button
                     onClick={() =>
                       dispatch(
@@ -60,14 +60,14 @@ const CartItem = () => {
                         })
                       )
                     }
-                    className="border border-gray-400 h-5 font-normal text-lg flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-black"
+                    className="border border-gray-400 h-5 font-normal ss:text-lg text-sm flex items-center justify-center px-2 hover:bg-gray-700 hover:text-white cursor-pointer duration-300 active:bg-black"
                   >
                     +
                   </button>
                 </div>
               </div>
             </div>
-            <p className="w-14">${item.quantity * item.price}</p>
+            <p className="w-14 ss:text-lg text-[12px]">${item.quantity * item.price}</p>
           </div>
         ))}
       </div>
