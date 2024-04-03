@@ -31,7 +31,7 @@ const Header = () => {
           <Link to="/login">
             <img src={userInfo ? userInfo.image : profile_icon} alt="profile icon" className="w-10 h-10 border-2 rounded-full cursor-pointer" />
           </Link>
-          {userInfo && <p>{userInfo.name}</p>}
+          {userInfo && <p className="ss:flex hidden">{userInfo.name}</p>}
         </div>
       </div>
     </div>
