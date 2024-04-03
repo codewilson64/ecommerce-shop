@@ -4,6 +4,7 @@ import { HiOutlineArrowLeft } from "react-icons/hi";
 import { decrementQuantity, deleteItem, incrementQuantity, resetCart } from "../redux/ecommerceSlice";
 import { ToastContainer, toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import { trash } from "../assets";
 
 const CartItem = () => {
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ const CartItem = () => {
         {productData.map((item) => (
           <div key={item._id} className="flex items-center justify-between sm:gap-3 gap-6 mt-6">
             <div className="flex items-center gap-2">
-              <MdOutlineClose onClick={() => dispatch(deleteItem(item._id))} className="text-xl cursor-pointer" />
+              <img src={trash} onClick={() => dispatch(deleteItem(item._id))} className="text-xl cursor-pointer" />
               <img src={item.image} alt="productImage" className="xs:w-32 w-14 xs:h-32 h-14 object-cover" />
             </div>
 
